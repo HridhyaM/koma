@@ -4,6 +4,8 @@ import 'package:koma/styles/app_colors.dart';
 class AppTextStyles {
   static const TextStyle appname = TextStyle(
       fontSize: 48, fontWeight: FontWeight.w400, color: AppColors.primary);
+      static const TextStyle subname = TextStyle(
+      fontSize: 32, fontWeight: FontWeight.w400, color: AppColors.primary);
 
   static const TextStyle buttonText =
       TextStyle(fontSize: 16, fontWeight: FontWeight.w600);
