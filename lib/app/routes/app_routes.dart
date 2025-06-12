@@ -10,6 +10,6 @@ class AppRoutes {
   static const String datescreen = '/datescreen';
   static const String gender = '/choosegender';
   static const String ChooseCountry = '/choosecountry';
-  static const String Homescreen = '/home';
+  static const String botoomnavigation = '/nav';
   static const String roomlist = '/rooms';
 }

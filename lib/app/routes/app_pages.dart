@@ -14,6 +14,7 @@ import 'package:koma/app/modules/home/views/password_view.dart';
 import 'package:koma/app/modules/home/views/room_screen_list.dart';
 import 'package:koma/app/modules/home/views/sucess_screen.dart';
 import 'package:koma/app/routes/app_routes.dart';
+import 'package:koma/widgets/bottom_navigation.dart';
 
 class AppPages {
   static final pages = [
@@ -31,7 +32,7 @@ class AppPages {
     GetPage(name: AppRoutes.datescreen, page: () => DateScreen()),
     GetPage(name: AppRoutes.gender, page: () => GenderSelection()),
     GetPage(name: AppRoutes.ChooseCountry, page: () => ChooseCountry()),
-    GetPage(name: AppRoutes.Homescreen, page: () => HomeScreen()),
+    GetPage(name: AppRoutes.botoomnavigation, page: () => BottomNavigation()),
      GetPage(name: AppRoutes.roomlist, page: () => RoomScreenList()),
   ];
 }

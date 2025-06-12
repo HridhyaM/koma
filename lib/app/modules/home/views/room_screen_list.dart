@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:koma/styles/app_colors.dart';
 import 'package:koma/styles/app_padding.dart';
 import 'package:koma/styles/app_text_styles.dart';
+import 'package:koma/widgets/custom_appbar.dart';
 import 'package:koma/widgets/custom_button.dart';
 import 'package:koma/widgets/custom_text_filed.dart';
 
@@ -11,13 +12,7 @@ class RoomScreenList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title:  Text("KOMA", style: AppTextStyles.appname),
-        actions: [
-          IconButton(onPressed: (){}, icon: Icon(Icons.menu,color: AppColors.iconColors,))
-        ],
-      ),
+   
 
       body: Padding(
         padding: AppPadding.screenPadding,
@@ -55,8 +50,12 @@ class RoomScreenList extends StatelessWidget {
                   ),
                SizedBox(
                     height: 600,
-                    child: ListView.builder(itemBuilder: (context,index){
+                    child: ListView.separated(
+                      itemCount: 10,
+                      itemBuilder: (context,index){
+                      
                       return ListTile(
+                        
                         leading: CircleAvatar(
                           radius: 20,
                         ),
@@ -67,7 +66,7 @@ class RoomScreenList extends StatelessWidget {
                           backgroundColor: AppColors.trailingcolor,
                         ),
                       );
-                    }),
+                    }, separatorBuilder: (BuildContext context, int index) => Divider(),),
                   )
             
             ],

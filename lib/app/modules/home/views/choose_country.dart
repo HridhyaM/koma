@@ -35,7 +35,7 @@ class ChooseCountry extends StatelessWidget {
               child: CustomButton(
                 bgcolor: AppColors.primary,
                 child: Text("Next"), onTap: (){
-                  Get.toNamed(AppRoutes.Homescreen);
+                  Get.toNamed(AppRoutes.botoomnavigation);
                 }),
             )
           ],
