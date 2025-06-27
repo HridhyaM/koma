@@ -8,4 +8,5 @@ class AppColors {
      static const Color iconColors=Color(0xff4AB0A6);
       static const Color containercolor=Color(0xff4C4968);
       static const Color trailingcolor=Color(0xff34A853);
+     
 }

@@ -1,15 +1,18 @@
 import 'package:get/get.dart';
 import 'package:koma/app/modules/home/bindings/login_binding.dart';
+import 'package:koma/app/modules/home/views/alert_copy.dart';
 import 'package:koma/app/modules/home/views/auth/forgot_password_screen.dart';
 import 'package:koma/app/modules/home/views/auth/login_screen.dart';
 import 'package:koma/app/modules/home/views/auth/new_password.dart';
 import 'package:koma/app/modules/home/views/auth/otp_screen.dart';
 import 'package:koma/app/modules/home/views/choose_country.dart';
+import 'package:koma/app/modules/home/views/create_room.dart';
 import 'package:koma/app/modules/home/views/date_screen.dart';
 import 'package:koma/app/modules/home/views/email_view.dart';
 import 'package:koma/app/modules/home/views/gender_selection.dart';
 import 'package:koma/app/modules/home/views/home_screen.dart';
 import 'package:koma/app/modules/home/views/login_view.dart';
+import 'package:koma/app/modules/home/views/media_screen.dart';
 import 'package:koma/app/modules/home/views/password_view.dart';
 import 'package:koma/app/modules/home/views/room_screen_list.dart';
 import 'package:koma/app/modules/home/views/sucess_screen.dart';
@@ -34,5 +37,8 @@ class AppPages {
     GetPage(name: AppRoutes.ChooseCountry, page: () => ChooseCountry()),
     GetPage(name: AppRoutes.botoomnavigation, page: () => BottomNavigation()),
      GetPage(name: AppRoutes.roomlist, page: () => RoomScreenList()),
+      GetPage(name: AppRoutes.createroom, page: () => CreateRoom()),
+        GetPage(name: AppRoutes.alert, page: () => AlertCopy()),
+         GetPage(name: AppRoutes.media, page: () => MediaScreen()),
   ];
 }

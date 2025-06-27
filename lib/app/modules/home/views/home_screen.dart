@@ -79,7 +79,7 @@ SizedBox(
         CustomButton(
           bgcolor: AppColors.secondary,
           child: Text('Join the team',style: AppTextStyles.buttonText,), onTap: (){
-            Get.toNamed(AppRoutes.roomlist);
+            Get.toNamed(AppRoutes.createroom);
           })
       ],
     ),
